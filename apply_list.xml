@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#e7ecd0"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textColor="#797979"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textColor="#797979"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical">
+
+        <ImageView
+            android:id="@+id/chatImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/chat"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/chatCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:layout_marginHorizontal="5dp"/>
+
+        <TextView
+            android:id="@+id/chatTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/16 15:30"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</LinearLayout>
